@@ -12,6 +12,7 @@ import {
   tournament,
   purchase,
   transfer,
+  logout,
 } from "./assets";
 import Button from "../Button";
 
@@ -86,6 +87,11 @@ export default function Navbar() {
               <img src={transfer} alt="transfer" />
               <div className={styles.nav_title}>Make a Transfer</div>
             </div>
+          </div>
+
+          <div className={styles.app_actions} onClick={onOpenModal}>
+            <img src={logout} alt="logout" />
+            <div className={styles.action_title}>Log Out</div>
           </div>
         </div>
       </div>

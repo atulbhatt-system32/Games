@@ -3,6 +3,7 @@ import games from "./img/games.svg";
 import info from "./img/info.svg";
 import invite from "./img/invite.svg";
 import leader_boards from "./img/leader_boards.svg";
+import logout from "./img/logout.svg";
 import menu_bar from "./img/menu_bar.svg";
 import notifications from "./img/notifications.svg";
 import purchase from "./img/purchase.svg";
@@ -15,6 +16,7 @@ export {
   info,
   invite,
   leader_boards,
+  logout,
   menu_bar,
   notifications,
   purchase,
