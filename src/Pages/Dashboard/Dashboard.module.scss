@@ -1,0 +1,77 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  .title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .games_container {
+    width: 100%;
+    margin-top: 2rem;
+
+    .game_card {
+      width: 100%;
+      margin-bottom: 1rem;
+      .game_thumbnail {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .card_body {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        background: rgba(0, 0, 0, 0.4);
+        .game_title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 1rem;
+        }
+        .game_description {
+          font-family: "Nunito";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: rgba(255, 255, 255, 0.8);
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// media queries
+
+@media screen and (min-width: 768px) {
+  .dashboard {
+    padding: 2%;
+    .games_container {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      justify-content: space-between;
+
+      .game_card {
+        max-width: 600px;
+        .game_thumbnail {
+          img {
+            max-width: 600px;
+            max-height: 330px;
+          }
+        }
+        .card_body {
+          .cta_wrapper {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
