@@ -1,15 +1,19 @@
-import { Home, AboutUs } from "./Pages";
+import { Dashboard } from "./Pages";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar, Sidebar } from "./Components/index";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 function App() {
   return (
     <div className="App">
+      <Sidebar />
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-        </Routes>
+        <main>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
+        </main>
       </Router>
     </div>
   );
